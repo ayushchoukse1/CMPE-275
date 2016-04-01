@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+<aop:aspectj-autoproxy />
+<aop:config proxy-target-class="true"/>
+
+<bean name="fileserviceaspect" class="edu.sjsu.cmpe275.lab1.aspect.FileServiceAspect"></bean>
+<bean name="fileservice" class="edu.sjsu.cmpe275.lab1.service.FileService"></bean>
+<bean name="alicetext1" class="edu.sjsu.cmpe275.lab1.models.AliceText1">
+	<property name="alice" value="true"></property>
+	<property name="bob" value="false"></property>
+	<property name="carl" value="false"></property>
+</bean>
+<bean name="accesscontrol" class="edu.sjsu.cmpe275.lab1.service.AccessControl">
+
+</bean>
+
+</beans>

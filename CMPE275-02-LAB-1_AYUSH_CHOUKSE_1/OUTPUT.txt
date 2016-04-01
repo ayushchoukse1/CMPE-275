@@ -1,0 +1,73 @@
+<----------Below pasted is the output of TestCase.java ran as JUnit Test in eclipse.---------->
+
+
+
+
+
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bb5abf7: startup date [Tue Mar 03 23:13:00 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 2
+alice  gave access of alicetext1 to bob
+bob reads the alicetext1
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a7b94bd: startup date [Tue Mar 03 23:13:02 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 1
+bob cannot Read alicetext1
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2662d341: startup date [Tue Mar 03 23:13:02 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 8
+alice  gave access of alicetext1 to bob
+bob cannot Read alicetext2
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@24cd59e9: startup date [Tue Mar 03 23:13:02 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 6
+alice  gave access of alicetext1 to bob
+alice  gave access of alicetext1 to carl
+carl  gave access of alicetext1 to bob
+alice unshared alicetext1 from bob
+bob cannot Read alicetext1
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60869739: startup date [Tue Mar 03 23:13:03 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 5
+alice  gave access of alicetext1 to bob
+bob  gave access of alicetext1 to carl
+alice unshared alicetext1 from carl
+carl cannot Read alicetext1
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@51b30472: startup date [Tue Mar 03 23:13:03 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 7
+alice  gave access of alicetext1 to bob
+bob  gave access of alicetext1 to carl
+alice unshared alicetext1 from bob
+carl reads the alicetext1
+bob Unauthorized !!
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@150fa52: startup date [Tue Mar 03 23:13:03 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 3
+alice  gave access of alicetext1 to bob
+bob  gave access of alicetext1 to carl
+carl reads the alicetext1
+INFO : org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45d3e4a5: startup date [Tue Mar 03 23:13:03 PST 2015]; root of context hierarchy
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [Spring.xml]
+---------==========--------------============-----------------
+Test Case : 4
+alice  gave access of alicetext1 to bob
+bob Unauthorized !!
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TestCases: 
+
+test2 : pass
+test1 : pass
+test8 : pass
+test6 : pass
+test5 : pass
+test7 : pass
+test3 : pass
+test4 : pass
